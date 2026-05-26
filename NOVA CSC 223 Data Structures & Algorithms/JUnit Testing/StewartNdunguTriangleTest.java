@@ -36,33 +36,42 @@ public class StewartNdunguTriangleTest {
 		// expected value: "This is a scalene triangle. "  
 		// value returned from the method: triangle.triangleType() 
 	}//end test
-	/*
+	
 	@Test
 	public void test4(){
 		// add your code below
 		Triangle triangle = new Triangle("E","5","9");
 	
 
-		assertEquals(errMessage ,triangle.triangleType());   
+		assertEquals("The side 1 is not an integer number.\n\nNot a valid triangle!\n" ,triangle.triangleType());   
 		// change above arguments(true, true) to (expectedValue, valueReturned)
 
 	}//end test
 	
 	@Test
 	public void test5(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("3","L","9");
+	
+
+		assertEquals("The side 2 is not an integer number.\n\nNot a valid triangle!\n" ,triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test6(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("3","5","X");
+	
+
+		assertEquals("The side 3 is not an integer number.\n\nNot a valid triangle!\n" ,triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test7(){
-		assertEquals(true,true);
-	}//end test
+		Triangle triangle = new Triangle("530","555","525");
 	
+
+		assertEquals("This triangle is too big.\n" ,triangle.triangleType());
+	}//end test
+	/*
 	@Test
 	public void test8(){
 		assertEquals(true,true);
@@ -127,7 +136,10 @@ public class StewartNdunguTriangleTest {
 	
 	@Test
 	public void test20(){
-		assertEquals(true,true);	
+		Triangle triangle = new Triangle("530","2355","112");
+	
+
+		assertEquals("Not a valid triangle!\nThis triangle is too big.\n" ,triangle.triangleType());	
 	}//end test
 	*/
 }
