@@ -1,6 +1,6 @@
 // Triangle class 
 
-public class StewartNdunguTriangle {
+public class Triangle {
     // Instance variables for 3 triangle sides
     private String side1;
     private String side2;
