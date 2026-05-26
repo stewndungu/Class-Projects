@@ -12,7 +12,7 @@
 
 import static org.junit.Assert.*;
 import org.junit.Test;
-import Triangle.class;
+
 
 public class StewartNdunguTriangleTest {
 
@@ -36,17 +36,18 @@ public class StewartNdunguTriangleTest {
 		// expected value: "This is a scalene triangle. "  
 		// value returned from the method: triangle.triangleType() 
 	}//end test
-	/*
+	
 	@Test
 	public void test4(){
 		// add your code below
+		Triangle triangle = new Triangle("E","5","9");
+	
 
-
-		assertEquals(true,true);   
+		assertEquals(errMessage ,triangle.triangleType());   
 		// change above arguments(true, true) to (expectedValue, valueReturned)
 
 	}//end test
-
+	/*
 	@Test
 	public void test5(){
 		assertEquals(true,true);

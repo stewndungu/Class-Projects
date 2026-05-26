@@ -28,7 +28,7 @@ public class Triangle {
         try {
             s1 = Integer.parseInt(side1);
         } catch (NumberFormatException e) {
-           errMessage += "The side 1 is not an integer number.\n\n";
+           errMessage += .\n\n"The side 1 is not an integer number";
         }
         try {
             s2 = Integer.parseInt(side2);
