@@ -71,12 +71,15 @@ public class StewartNdunguTriangleTest {
 
 		assertEquals("This triangle is too big.\n" ,triangle.triangleType());
 	}//end test
-	/*
+	
 	@Test
 	public void test8(){
-		assertEquals(true,true);
-	}//end test
+		Triangle triangle = new Triangle("-5","10","15");
 	
+
+		assertEquals("At least one side is negative!\nNot a valid triangle!\n" ,triangle.triangleType());
+	}//end test
+	/*
 	@Test
 	public void test9(){
 		assertEquals(true,true);
