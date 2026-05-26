@@ -12,6 +12,7 @@
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+import Triangle.class;
 
 public class StewartNdunguTriangleTest {
 
