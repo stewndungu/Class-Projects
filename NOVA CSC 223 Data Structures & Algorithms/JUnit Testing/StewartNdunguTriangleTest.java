@@ -36,7 +36,7 @@ public class StewartNdunguTriangleTest {
 		// expected value: "This is a scalene triangle. "  
 		// value returned from the method: triangle.triangleType() 
 	}//end test
-	
+	/*
 	@Test
 	public void test4(){
 		// add your code below
@@ -47,7 +47,7 @@ public class StewartNdunguTriangleTest {
 		// change above arguments(true, true) to (expectedValue, valueReturned)
 
 	}//end test
-	/*
+	
 	@Test
 	public void test5(){
 		assertEquals(true,true);
