@@ -13,7 +13,7 @@
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-public class TriangleTest {
+public class StewartNdunguTriangleTest {
 
 	@Test
 	public void test1(){
