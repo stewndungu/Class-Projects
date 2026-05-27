@@ -79,62 +79,86 @@ public class StewartNdunguTriangleTest {
 
 		assertEquals("At least one side is negative!\nNot a valid triangle!\n" ,triangle.triangleType());
 	}//end test
-	/*
+	
 	@Test
 	public void test9(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("X","Y","5");
+	
+
+		assertEquals("The side 1 is not an integer number.\n\nThe side 2 is not an integer number.\n\nNot a valid triangle!\n" ,triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test10(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("X","5","Z");
+	
+
+		assertEquals("The side 1 is not an integer number.\n\nThe side 3 is not an integer number.\n\nNot a valid triangle!\n" ,triangle.triangleType());
 	}//end test	
 	
 	@Test
 	public void test11(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("5","Y","Z");
+	
+
+		assertEquals("The side 2 is not an integer number.\n\nThe side 3 is not an integer number.\n\nNot a valid triangle!\n" ,triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test12(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("X","Y","Z");
+	
+
+		assertEquals("The side 1 is not an integer number.\n\nThe side 2 is not an integer number.\n\nThe side 3 is not an integer number.\n\nNot a valid triangle!\n" ,triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test13(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("-5","600","600");
+	
+
+		assertEquals("At least one side is negative!\nNot a valid triangle!\nThis triangle is too big.\n" ,triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test14(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("3","5","3");
+		assertEquals("This is an isosceles triangle. ",triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test15(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle("5","3","3");
+		assertEquals("This is an isosceles triangle. ",triangle.triangleType());
 	}//end test
 	
 	@Test
 	public void test16(){
-		assertEquals(true,true);
+		Triangle triangle = new Triangle();
+		assertEquals("Not a valid triangle!\n",triangle.triangleType());
 	}//end test	
-	
+	/
 	@Test
 	public void test17(){
-		assertEquals(true,true);
+		// s1 + s3 <= s2
+		Triangle triangle = new Triangle("2","6","3");
+		assertEquals("Not a valid triangle!\n",triangle.triangleType());
 	}//end test
 	
 	
 	@Test
 	public void test18(){
-		assertEquals(true,true);
+		//s1 + s2 <= s3
+		Triangle triangle = new Triangle("2","3","6");
+		assertEquals("Not a valid triangle!\n",triangle.triangleType());
 	}//end test	
 	
 	
 	@Test
 	public void test19(){
-		assertEquals(true,true);	
+		//s2 + s3 <= s1
+		Triangle triangle = new Triangle("6","2","3");
+		assertEquals("Not a valid triangle!\n",triangle.triangleType());	
 	}//end test
 	
 	@Test
@@ -144,5 +168,5 @@ public class StewartNdunguTriangleTest {
 
 		assertEquals("Not a valid triangle!\nThis triangle is too big.\n" ,triangle.triangleType());	
 	}//end test
-	*/
+	
 }
