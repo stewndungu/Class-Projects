@@ -5,13 +5,45 @@ import java.io.IOException;
 public class EvaluateGCFAlgorithm {
 
     public static void main(String[] args) {
-        
+        System.out.println("Warming up the JVM...");
+        for (int i = 0; i < 50000; i++) {
+            GCFAlgorithm.gcf1(12345, 67890);
+            GCFAlgorithm.gcf2(12345, 67890);
+            GCFAlgorithm.gcf3(12345, 67890);
+
+            GCFAlgorithm.gcf1(12, 60);
+            GCFAlgorithm.gcf2(45, 67);
+            GCFAlgorithm.gcf3(125, 678);
+
+        }
+        System.out.println("Warm-up complete. Starting test...\n");
+        // --- END OF WARM-UP ---
+
         // The exact test cases from your instructions, plus one extreme case
         // to clearly demonstrate the inefficiency of gcf3.
         int[][] testCases = {
+           // Small numbers (negligible difference)
             {2, 6},
+            {7, 13},
+            {15, 15},
+            {17, 13},
+            {48, 18},
+            
+            // Medium numbers (starting to show slight variations)
             {200, 1},
-            {100000, 2}  // Added to prove that gcf3's subtraction method is slow
+            {1000, 500},
+            
+            // Large numbers (where gcf3 starts to slow down)
+            {12345, 54321},
+            {50000, 25},
+            {100000, 2},
+            
+            // Very large numbers (the "efficiency gap" becomes obvious)
+            {500000, 1},
+            {999999, 3},
+            {1000000, 2},
+            {2000000, 2}
+            
         };
 
         String filename = "results.txt";
