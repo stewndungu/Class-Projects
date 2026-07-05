@@ -136,7 +136,7 @@ public class LineList{
          Node current = head;
          while (current != null) {
             String line = current.getLine();
-            String[] words = line.split("[\\s\\t,;.?!\\-@'\"*]+");
+            String[] words = line.split("[\\s\\t,;.?!\\-@:'\"*]+");
             count += words.length;
             current = current.getNext();
          }
@@ -216,13 +216,12 @@ public class LineList{
          Node current = head;
          int lineNumber = 1;
          while (current != null) {
-            System.out.println(lineNumber + ". " + current.getLine() + "\n");
+            System.out.println(lineNumber + ". " + current.getLine());
             current = current.getNext();
             lineNumber++;
-         }
 
+         }
    }
-   
    public void replace(String s1, String s2){
       	// Replace all occurrences of s1 with s2.
          Node current = head;
