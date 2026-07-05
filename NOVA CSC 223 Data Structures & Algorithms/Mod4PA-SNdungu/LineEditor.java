@@ -96,12 +96,14 @@ public class LineEditor {
                     }
                     break;
                 case "i":
-                    if (parts.length < 3) {
-                        System.out.println("Usage: i lineNumber text");
+                    if (parts.length < 2) {
+                        System.out.println("Usage: i lineNumber");
                     } else {
                         try {
                             int n = Integer.parseInt(parts[1]);
-                            list.addLine(parts[2], n);
+                            System.out.print("Type a line: ");
+                            String line = scanner.nextLine();
+                            list.addLine(line, n);
                         } catch (NumberFormatException e) {
                             System.out.println("lineNumber must be an integer");
                         }
