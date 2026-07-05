@@ -88,10 +88,10 @@ public class LineList{
          else
          {
             Node current = head;
-            while (current.next != null) {
+            while (current.getnext() != null) {
                current = current.getnext();
             }
-            current.next = newNode;
+            current.setNext(newNode);
          }
    }
 
