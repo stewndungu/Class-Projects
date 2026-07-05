@@ -55,6 +55,7 @@ public class LineList{
                   throw new RuntimeException("Could not load file", e);
                }
          }
+   }
    
    public void save(String fileName){
       	// Save all lines represented with Nodes to a file. 
