@@ -42,7 +42,7 @@ public class LineEditor {
         //checks to see if there is an initial argument when starting the LineEditor class
         if (args.length > 0) {
             try {
-                list.load(args[0], false);
+                list.load(args[0], true);
                 System.out.println("Loaded file: " + args[0]);
             } catch (RuntimeException e) {
                 System.out.println(e.getMessage());
